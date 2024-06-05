@@ -3,7 +3,5 @@ on: [push]
 
 jobs:
   steps:
-    - name: Permission Setting
-      run: chmod +x GreatestCommonDivisor.sh Test.sh
     - name: Test Run
       run: ./Test.sh
