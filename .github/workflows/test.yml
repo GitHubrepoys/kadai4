@@ -5,4 +5,4 @@ jobs:
   check-bats-version:
     runs-on: ubuntu-latest
     steps:
-    - run: ./Test.sh
+    - run: /home/z24025ys/kadai4/Test.sh
