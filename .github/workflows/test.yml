@@ -3,5 +3,4 @@ on: [push]
 
 jobs:
   steps:
-    - name: Test Run
-      run: ./Test.sh
+    - run: ./Test.sh
