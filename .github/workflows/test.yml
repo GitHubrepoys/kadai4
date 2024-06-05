@@ -2,7 +2,13 @@ name: GreatestCommonDivisor_test
 on: [push]
 
 jobs:
-  check-bats-version:
+  io_test:
+    name: Use Linux commands
     runs-on: ubuntu-latest
     steps:
-    - run: ../Test.sh
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Permission Setting
+        run: chmod +x GreatestCommonDivisor.sh Test.sh
+      - name: Test Run
+        run: ./Test.sh
