@@ -1,6 +1,8 @@
-me: GreatestCommonDivisor_test
+name: GreatestCommonDivisor_test
 on: [push]
 
 jobs:
-  steps:
+  check-bats-version:
+    runs-on: ubuntu-latest
+    steps:
     - run: ./Test.sh
